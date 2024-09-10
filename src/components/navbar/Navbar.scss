@@ -1,0 +1,56 @@
+@import '../../super.scss';
+
+.nbar{
+    background-color: $navbar-color;
+    height: 10vh;
+    color: white;
+    .score{
+        margin-right: 4vw!important;
+        font-weight: 400!important;
+    }
+    .name{
+        margin-right: 0.1vw!important;
+    }
+    .tex{
+        align-self: center;
+        text-align: center;
+        margin: 0;
+        font-size: 2.8vh;
+        font-weight: 500;
+    }
+    .prof-img{
+        border-radius: 50%;
+        height: 6vh;
+    }
+}
+
+.logo{
+    left: 1vw;
+    top: 1.3vh;
+    position: absolute;
+    height: 7vh;
+}
+
+.box-logout{
+    border-radius: 0!important;
+    background-color: #444!important;
+    color: white!important;
+}
+
+.box-logout a{
+    color: #cccccc!important;
+}
+
+.box-logout a:hover,.box-logout a:focus{
+    background-color: #212121!important;
+
+}
+
+.navbar{
+    padding: 0!important;
+}
+
+.click-back{
+    color: white!important;
+    font-size: 0.9em!important;
+}

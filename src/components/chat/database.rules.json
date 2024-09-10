@@ -1,0 +1,13 @@
+{
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    "global": {
+      ".read": true,
+      ".write": true
+    },
+    "current_level": {
+      ".write": "auth.uid === 'deduce-server-id'",
+      ".read": true
+    }
+  }
+}

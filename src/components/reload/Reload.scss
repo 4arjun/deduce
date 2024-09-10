@@ -1,0 +1,43 @@
+.reload{
+    z-index: 1000;
+    height: 100vh;
+    background-color: #212121;
+    display: block;
+    position: relative;
+    color: #eee;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-top:25vh;
+    .r-btn{
+        font-size: 50px;
+    }
+}
+
+.rotate-phone{
+    height: 90px;
+    margin-bottom: 40px;
+    fill: #efefef;
+}
+
+.click-phone{
+    height: 50px;
+    margin-bottom: 40px;
+    fill: #efefef;
+}
+
+@media screen and (orientation: landscape){
+    .rotate{
+       display: none;
+    }
+}
+
+@media screen and (orientation: portrait){
+    .rotate{
+        display: block;
+    }
+}
+
+.rotate{
+    z-index: 1000;
+}

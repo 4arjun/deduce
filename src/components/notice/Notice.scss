@@ -1,0 +1,29 @@
+
+.notice{
+    position: fixed;
+    left: 50%;
+    margin-left: -18%;
+    z-index: 50;
+    background-color: #ffffff;
+    padding-top: 0.5%;
+    top:25%;
+    width: 36%;
+    height: 46%;
+    display: flex;
+    align-items: center;
+    border : solid 2vh #523629;
+    .close{
+        color: black;
+        font-size: 7vh;
+        position: absolute;
+        top : -4vh;
+        right: -15%;
+        path{
+            stroke: #dedede ;
+            stroke-width: 30px;
+        }
+    }
+    .p{
+        width: 100%;
+    }
+}

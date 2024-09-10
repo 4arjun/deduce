@@ -1,0 +1,141 @@
+@import '../../super.scss';
+
+$purple_0 : 'rgba(109,113,201,0)';
+$purple_shade : 'rgba(109,113,201,0.85)';
+
+$grey_0 : rgba(180,180,180,0);
+$grey_shade : rgba(100,100,100,1);
+
+#door-board{
+    height: 90vh;
+    background-color: $doorinfo-color;
+    position: absolute;
+    right: 0px;
+    overflow-y: scroll;
+    z-index: 100;
+    transition: all 0.5s;
+    overflow-x: hidden;
+    .toggle-2{
+        position: fixed;
+        font-size: 4.9vh;
+        right: -3%;
+        transition: all 0.5s;
+        top: 50%;
+        background-color:white;
+        border-radius: 0px 10px 10px 0px;
+        width: 3%;
+        height: 7vh;
+        text-align: center;
+    }
+    .togg-tra{
+        right: 19%;
+    }
+    .door-info{
+        width: 100%;
+        height: 18%;
+        border-bottom: solid 1px grey;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        padding-left: 15%;
+        .door{
+            font-size: 6vh;
+        }
+        .info{
+            .door-name{
+                //color: #f09595;
+                //margin-bottom: 1vh;
+                margin-bottom: 0vh;
+            }
+            .points{
+                //color: #6d71c9;
+                margin-bottom: 0px;
+            }
+            .tex{
+                font-size: 0vh;
+                transition: all 0.5s;
+            }
+            .tex-tra{
+                //font-size: 3vh;
+                font-size: 3.25vh;
+            }
+        }
+        .img-cont{
+            width: 30%;
+            .winner-img{
+                height: 7vh;
+                margin-bottom: 1vh;
+                border-radius: 50%;
+            }
+            .name{
+                font-size: 1.6vh;
+                text-align: center;
+                margin: 0px;
+            }
+        }
+    }
+    .current-door{
+        background-image: linear-gradient(to right,$grey_shade, $grey_0,$grey_0, $grey_0);
+        color:#fefefe;
+    }
+    .door-info:hover{
+        background-image: linear-gradient(to right,$grey_shade, $grey_0,$grey_0, $grey_0);
+        color:#fefefe;
+    }
+}
+.bor{
+    width: 0%;
+    border-left: none;
+}
+.bor-tra{
+    width: 22%;
+    border-left: solid 0.2vw $grey_shade;
+}
+
+#door-board::-webkit-scrollbar {
+    width: 2px;
+}
+
+#door-board::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#door-board::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 50%;
+}
+
+.color-purple{
+    color: #A57BAF;
+}
+
+//.door-info::before{
+//    position: absolute;
+//    content: '';
+//    height: 18%;
+//    width:1%;
+//    background-color: $grey_shade;
+//    transition: 10ms;
+//}
+//
+//.door-info:hover::before{
+//    transition: 10ms;
+//    z-index: -1;
+//    position: absolute;
+//    content: '';
+//    height: 18%;
+//    width:35%;
+//    background-color: rgba(0,0,0,0);
+//    background-image: linear-gradient(to right, $grey_shade , $grey_0,$grey_0);
+//}
+//
+//.door-info:hover{
+//  color: #fefefe;
+//}
+//
+
+.hover:hover{
+    cursor: pointer;
+}
+
