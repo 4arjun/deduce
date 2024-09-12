@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Chat.css";
 import { ReactComponent as Down } from "./down.svg";
 import db from "../../firebase";
+
 import { get } from "../../../auth0/http";
 import { API_ROOT } from "../../../auth0/api_config";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
